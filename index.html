@@ -3,247 +3,383 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <meta name="description" content="Andrues K — Software Developer specializing in Python, AI, Machine Learning, and Web Development. View my projects, experience, and certifications.">
+  <title>Andrues K | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="portfolio-logo">Portfolio</div>
     <nav>
-      <ul class="nav-links">
+      <div class="menu-toggle" id="menuToggle">
+        <div></div><div></div><div></div>
+      </div>
+      <ul class="nav-links" id="navLinks">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
+        <li><a href="#experience">Experience & Training</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact Me</a></li>
       </ul>
     </nav>
+
   <section id="home" class="home">
+    <canvas id="particleCanvas"></canvas>
     <div class="home-content">
-      <div class="vertical-line"></div> 
+      <div class="vertical-line"></div>
       <div class="details">
+        <div class="open-to-work">
+          <span class="otw-dot"></span>
+          Available for opportunities
+        </div>
         <h1 class="name">ANDRUES K</h1>
         <h2 class="passion">Software Developer</h2>
         <p class="description">
-          "I am a passionate Computer Science Engineer with a strong interest in Python, AI, and Data Science. "
+          CSE graduate (CGPA 7.54) specializing in AI &amp; Data Science. I build and deploy real-world applications — from ML pipelines and computer vision systems to full-stack Django apps running on Linux servers.
         </p>
         <div class="buttons">
           <a href="assets/Andrues 1.pdf" class="btn" download>Download CV</a>
           <a href="#contact" class="btn">Contact</a>
         </div>
         <div class="social-links">
-          <a href="https://www.linkedin.com/in/andrues-k-471635255/" target="_blank" rel="noopener">LinkedIn</a> |
+          <a href="https://www.linkedin.com/in/andrues-k-471635255/" target="_blank" rel="noopener">LinkedIn</a>
+          <span>|</span>
           <a href="https://github.com/Andruandru2" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
     </div>
   </section>
-  
 
   <section class="about-me" id="about">
     <div class="about-content">
-      <h2>About Me</h2>
-      <div class="about-details">
-        <div class="about-line"></div>
-        <div class="about-image">
-          <img src="assets/comp.jpg" alt="">
+      <h2>About <span>Me</span></h2>
+      <div class="stats-row">
+        <div class="stat-item">
+          <span class="stat-number" data-target="9">0</span>
+          <span class="stat-label">Projects Built</span>
         </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-label">Internships</span>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number-row">
+            <span class="stat-number" data-target="90">0</span><span class="stat-suffix">%</span>
+          </div>
+          <span class="stat-label">CNN Accuracy</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="2">0</span>
+          <span class="stat-label">Deployed Apps</span>
+        </div>
+      </div>
+      <div class="about-details">
+        <div class="about-image">
+          <img src="assets/comp.jpg" alt="Andrues K">
+        </div>
+        <div class="about-line"></div>
         <div class="about-text">
           <p>
             Hello! I'm <strong>Andrues</strong>, a Software Developer with a background in Computer Science Engineering specializing in Artificial Intelligence and Data Science. I have skills in Python, SQL, and modern development frameworks, with experience building real-world projects in machine learning, data systems, and web applications. I enjoy solving problems and building scalable software while continuously learning and growing in the tech field.
           </p>
-        
           <h4>Technical Skills</h4>
-
-<ul class="skills">
-
-  <li><b>Programming:</b> Python, SQL</li>
-
-  <li><b>AI / ML:</b> Machine Learning, Deep Learning, NLP, Computer Vision</li>
-
-  <li><b>Libraries:</b> TensorFlow, Keras, Scikit-learn, Pandas, NumPy</li>
-
-  <li><b>Tools:</b> Streamlit, Flask, Git, Jupyter Notebook</li>
-
-  <li><b>Databases:</b> MySQL</li>
-
-</ul> 
+          <ul class="skills">
+            <li><strong>Programming:</strong> Python, C, C++, SQL</li>
+            <li><strong>AI / ML:</strong> Machine Learning, Deep Learning, NLP, Computer Vision</li>
+            <li><strong>Libraries:</strong> TensorFlow, Keras, Scikit-learn, Pandas, NumPy, OpenCV</li>
+            <li><strong>Web:</strong> HTML, CSS, JavaScript, Django, Flask, Streamlit</li>
+            <li><strong>Tools:</strong> Git, Selenium, Jupyter Notebook, FFmpeg</li>
+            <li><strong>Databases:</strong> MySQL</li>
+            <li><strong>Deployment:</strong> Linux Server</li>
+          </ul>
         </div>
       </div>
     </div>
-  
   </section>
 
   <section id="experience" class="experience">
-    <h1>Experience</h1>
+    <h1>Experience & Training</h1>
     <div class="experience-content">
+
       <div class="experience-item">
-        <div class="descriptions">
-          <p>Completed a course in Artificial Intelligence and Data Science, building a strong foundation in Python programming, core AI concepts, machine learning, and data analysis techniques to develop intelligent solutions</p>
+        <div class="exp-dot"></div>
+        <div class="exp-card">
+          <div class="exp-header">
+            <h2>Python & Data Science Instructor Intern</h2>
+            <span class="exp-duration">Jan 2026 – Mar 2026</span>
+          </div>
+          <h3>Profenaa Technologies</h3>
+          <p>Taught Python programming, SQL, and Data Analysis to students at an institute level. Designed and delivered sessions covering core programming concepts, data manipulation with Pandas, and practical data analysis techniques.</p>
         </div>
-        <div class="det">
-          <div class="vertical-l"></div>
-          <h2>AI and DS</h2>
+      </div>
+
+      <div class="experience-item">
+        <div class="exp-dot"></div>
+        <div class="exp-card">
+          <div class="exp-header">
+            <h2>AI and Data Science</h2>
+            <span class="exp-duration">Oct 2024 – Sep 2025</span>
+          </div>
           <h3>Cadd Cae Computers</h3>
-          <p><strong>Duration:</strong> Oct 1/24 - Sep 30/25</p>
+          <p>Completed a course in Artificial Intelligence and Data Science, building a strong foundation in Python programming, core AI concepts, machine learning, and data analysis techniques to develop intelligent solutions.</p>
         </div>
       </div>
+
       <div class="experience-item">
-        <div class="descriptions">
-          <p>This comprehensive program provided in-depth knowledge of machine learning, deep learning, and data analytics, covering both theoretical and practical aspects of AI and data-driven technologies.</p>
-        </div>
-        <div class="det">
-          <div class="vertical-l"></div>
-          <h2>Python Intern</h2>
+        <div class="exp-dot"></div>
+        <div class="exp-card">
+          <div class="exp-header">
+            <h2>Python Intern</h2>
+            <span class="exp-duration">Aug 2024 – Sep 2024</span>
+          </div>
           <h3>Hashind Robotics</h3>
-          <p><strong>Duration:</strong> Jun 1/24 - Jun 30/24  </p>
+          <p>Developed automated Barcode and QR Code generators using Python, designed a Tkinter-based Banking Management System, and applied core OOP, file handling, and exception handling concepts in real-world applications.</p>
         </div>
       </div>
+
       <div class="experience-item">
-        <div class="descriptions">
-          <p>Worked as a Web Development Intern, gaining expertise in HTML, CSS, and JavaScript. Developed projects like a weather application using APIs, a personal portfolio, and a simple e-commerce website. Enhanced skills in responsive design, and frontend development.</p>
-        </div>
-        <div class="det">
-          <div class="vertical-l"></div>
-          <h2>Web Develpment Intern</h2>
+        <div class="exp-dot"></div>
+        <div class="exp-card">
+          <div class="exp-header">
+            <h2>Web Development Intern</h2>
+            <span class="exp-duration">Jul 2024 – Aug 2024</span>
+          </div>
           <h3>Hashind Robotics</h3>
-          <p><strong>Duration:</strong> Jul 2/24 - Aug 1/24</p>
+          <p>Designed and developed a responsive personal portfolio website and a real-time Weather Forecasting Web App using APIs. Built a functional e-commerce website and strengthened expertise in responsive design and front-end performance optimization.</p>
         </div>
       </div>
+
+    </div>
+  </section>
+
+  <section id="education" class="education">
+    <h1>Education</h1>
+    <div class="education-content">
+
+      <div class="education-item">
+        <div class="edu-dot"></div>
+        <div class="edu-card">
+          <div class="edu-header">
+            <div>
+              <h2>B.E — Computer Science Engineering</h2>
+              <h3>SSM Institute of Engineering and Technology, Dindigul</h3>
+            </div>
+            <span class="edu-duration">2021 – 2025</span>
+          </div>
+          <div class="edu-meta">
+            <span class="edu-badge">CGPA: 7.54</span>
+            <span class="edu-badge">AI &amp; Data Science</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="education-item">
+        <div class="edu-dot"></div>
+        <div class="edu-card">
+          <div class="edu-header">
+            <div>
+              <h2>12th Standard — Higher Secondary</h2>
+              <h3>St. Mary's Higher Secondary School, Dindigul</h3>
+            </div>
+            <span class="edu-duration">2020 – 2021</span>
+          </div>
+          <div class="edu-meta">
+            <span class="edu-badge">88%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="education-item">
+        <div class="edu-dot"></div>
+        <div class="edu-card">
+          <div class="edu-header">
+            <div>
+              <h2>10th Standard — SSLC</h2>
+              <h3>St. Mary's Higher Secondary School, Dindigul</h3>
+            </div>
+            <span class="edu-duration">2018 – 2019</span>
+          </div>
+          <div class="edu-meta">
+            <span class="edu-badge">87%</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <section class="projects-certifications" id="projects">
     <h1>Projects</h1>
-    <div class="projects-container">
-        <div class="project-card">
-            <h2>Retail Radar</h2>
-            
-            <p class="short-desc">
-              Built a Streamlit app to monitor competitor prices.
-            </p>
+    <!-- Featured Projects -->
+    <p class="projects-label">Featured</p>
+    <div class="projects-container featured-grid">
 
-            <p class="full-desc">
-              Retail Radar is a competitive price intelligence system that scrapes
-              Amazon and Flipkart using Selenium, analyzes pricing trends, performs
-              forecasting using machine learning models, and recommends dynamic
-              pricing strategies through a Streamlit dashboard.
-            </p>
-
-            <a href="https://github.com/Andruandru2/Retail-Radar.git" class="project-link">github link</a>
+        <div class="project-card featured reveal">
+          <div class="featured-badge">★ Featured</div>
+          <span class="tag">Flask · AI · MySQL</span>
+          <h2>Smart Voting System</h2>
+          <p class="full-desc">Secure online voting with OTP verification and face recognition biometric authentication. Role-based access for voter, admin, and result-viewer roles. REST API backend with full audit trail.</p>
+          <div class="project-links">
+            <a href="https://github.com/Andruandru2" target="_blank" class="project-link">GitHub</a>
+          </div>
         </div>
-        <div class="project-card">
-            <h2>X-Ray Diagnosis</h2>
-            <p class="short-desc">
-              Developed CNN-based X-ray disease detection model with 90% accuracy
-            </p>
 
-            <p class="full-desc">
-              X-Ray Disease Detection is a deep learning system that analyzes chest X-ray images using a CNN model to detect potential diseases. The system processes medical images, classifies abnormalities with high accuracy, and provides predictions through a user-friendly interface to assist in early diagnosis.
-            </p>
-            <a href="https://github.com/Andruandru2/X-ray-disease-diagnosis-system.git" class="project-link">github link</a>
+        <div class="project-card featured reveal">
+          <div class="featured-badge">★ Featured</div>
+          <span class="tag">Streamlit · ML · Selenium</span>
+          <h2>Retail Radar</h2>
+          <p class="full-desc">Competitor price intelligence system scraping Amazon and Flipkart using Selenium. Applies time-series forecasting to recommend dynamic pricing via an interactive Streamlit dashboard.</p>
+          <div class="project-links"><a href="https://github.com/Andruandru2/Retail-Radar.git" target="_blank" class="project-link">GitHub</a></div>
         </div>
-        <div class="project-card">
-            <h2>AI subtitle Generator</h2>
-            <p class="short-desc">
-              Built app generating multilingual subtitles and AI voiceovers for videos
-            </p>
 
-            <p class="full-desc">
-              AI Subtitle Generator is a video processing tool that extracts audio from videos, converts speech to text using speech recognition models, translates subtitles into multiple languages, and automatically embeds subtitles and AI-generated voiceovers into videos.
-            </p>
-            <a href="https://github.com/Andruandru2/Subtitle-Genrator.git" class="project-link">github link</a>
+        <div class="project-card featured reveal">
+          <div class="featured-badge">★ Featured</div>
+          <span class="tag">Django · Linux</span>
+          <h2>FileZone</h2>
+          <p class="full-desc">A web-based file sharing and storage platform. Users can upload, manage, and share files securely. Built with Django and deployed on a Linux server with clean access control.</p>
+          <div class="project-links">
+            <a href="http://103.145.37.140:8093" target="_blank" class="project-link live">🔴 Live Demo</a>
+          </div>
         </div>
-        <div class="project-card">
-            <h2>Python Voice Assistant</h2>
-            <p class="short-desc">
-              An AI-based personal assistant that responds to voice commands.
-            </p>
 
-            <p class="full-desc">
-              AI Personal Assistant is a Python-based automation tool that processes voice commands to perform tasks such as sending emails, retrieving information, translating languages, and answering queries using APIs and natural language processing.
-            </p>
-            <a href="https://github.com/Andruandru2/voice-assistant.git" class="project-link">github link</a>
-        </div>
-        <div class="project-card">
-            <h2>Bank System</h2>
-            <p class="short-desc">
-              A secure banking system with account management features.
-            </p>
-
-            <p class="full-desc">
-              RPython Banking System is a console-based application that simulates basic banking operations such as account creation, deposits, withdrawals, balance checks, and transaction management using structured programming and file-based data storage.
-            </p>
-            <a href="https://github.com/Andruandru2/Banking-system" class="project-link">github link</a>
-        </div>
-        <div class="project-card">
-            <h2>React E-commerce Site</h2>
-            <p class="short-desc">
-              A user-friendly shopping platform built with React and Firebase.
-            </p>
-
-            <p class="full-desc">
-              React E-Commerce Website is a full-stack web application built with React that allows users to browse products, manage a shopping cart, and place orders while providing a responsive interface and dynamic state management for a smooth shopping experience.
-            </p>
-            <a href="https://github.com/Andruandru2/food-delivery" class="project-link">github link</a>
-        </div>
-        
     </div>
+
+    <!-- Other Projects -->
+    <div class="other-projects-wrapper" id="otherProjects">
+      <p class="projects-label" style="margin-top:2rem;">Other Projects</p>
+      <div class="projects-container">
+
+          <div class="project-card reveal">
+            <span class="tag">Django · Linux</span>
+            <h2>DIY Products Store</h2>
+            <p class="full-desc">A full-featured Django e-commerce app for buying and selling DIY products. Includes product listings, shopping cart, order management, and user authentication. Deployed on a Linux server.</p>
+            <div class="project-links">
+              <a href="http://103.145.37.140:8090" target="_blank" class="project-link live">🔴 Live Demo</a>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <span class="tag">Deep Learning · CNN</span>
+            <h2>X-Ray Diagnosis</h2>
+            <p class="full-desc">Deep learning system analysing chest X-ray images using a CNN to detect diseases with 90% accuracy. Provides predictions through a user-friendly interface to assist early diagnosis.</p>
+            <div class="project-links"><a href="https://github.com/Andruandru2/X-ray-disease-diagnosis-system.git" target="_blank" class="project-link">GitHub</a></div>
+          </div>
+
+          <div class="project-card reveal">
+            <span class="tag">NLP · Whisper · FFmpeg</span>
+            <h2>AI Subtitle Generator</h2>
+            <p class="full-desc">Extracts audio, converts speech to text via OpenAI Whisper, translates into multiple languages, and embeds subtitles and AI TTS voiceovers into videos — reducing hours of work to under a minute.</p>
+            <div class="project-links"><a href="https://github.com/Andruandru2/Subtitle-Genrator.git" target="_blank" class="project-link">GitHub</a></div>
+          </div>
+
+          <div class="project-card reveal">
+            <span class="tag">Python · NLP · APIs</span>
+            <h2>Python Voice Assistant</h2>
+            <p class="full-desc">Voice-command automation tool that sends emails, retrieves information, translates languages, and answers queries using APIs and natural language processing.</p>
+            <div class="project-links"><a href="https://github.com/Andruandru2/voice-assistant.git" target="_blank" class="project-link">GitHub</a></div>
+          </div>
+
+          <div class="project-card reveal">
+            <span class="tag">Python · OOP</span>
+            <h2>Banking System</h2>
+            <p class="full-desc">Console-based banking application simulating account creation, deposits, withdrawals, balance checks, and transaction management using structured programming and file-based storage.</p>
+            <div class="project-links"><a href="https://github.com/Andruandru2/Banking-system" target="_blank" class="project-link">GitHub</a></div>
+          </div>
+
+          <div class="project-card reveal">
+            <span class="tag">React · JavaScript</span>
+            <h2>React E-Commerce Site</h2>
+            <p class="full-desc">Full-stack React web app for browsing products, managing a cart, and placing orders. Responsive interface with dynamic state management for a smooth shopping experience.</p>
+            <div class="project-links"><a href="https://github.com/Andruandru2/food-delivery" target="_blank" class="project-link">GitHub</a></div>
+          </div>
+
+      </div>
+    </div>
+
+    <div class="show-more-wrapper">
+      <button class="show-more-btn" id="showMoreBtn">
+        View All 6 Projects <span class="show-more-arrow">↓</span>
+      </button>
+    </div>
+
     <h1 class="cet">Certifications</h1>
     <div class="certifications-container">
-      <div class="certification-card">
+      <div class="certification-card reveal">
         <h2>Master Diploma in AI and Data Science</h2>
-        <p>Issued by: Cadd cae</p>
-        <a href="assets\cadd cae.pdf" target="_blank" class="view-certificate">View</a>
+        <p>Issued by: Cadd Cae</p>
+        <span class="cert-date">Oct 2024 – Sep 2025</span>
+        <a href="assets/cadd cae.pdf" target="_blank" class="view-certificate">View</a>
       </div>
-      <div class="certification-card">
-        <h2>Python program Internship</h2>
+      <div class="certification-card reveal">
+        <h2>Python Program Internship</h2>
         <p>Issued by: Hashind Robotics</p>
+        <span class="cert-date">Aug 2024 – Sep 2024</span>
         <a href="assets/python.pdf" target="_blank" class="view-certificate">View</a>
       </div>
-        <div class="certification-card">
-          <h2>Data Scinece Internship</h2>
-          <p>Issued by: Codecraft</p>
-          <a href="assets/Ds Certificate.pdf" target="_blank" class="view-certificate">View</a>
-        </div>
-        <div class="certification-card">
-          <h2>Web development Internship</h2>
-          <p>Issued by: Hashind Robotics</p>
-          <a href="assets/web dev.pdf" target="_blank" class="view-certificate">View</a>
-        </div>
-      
-      
+      <div class="certification-card reveal">
+        <h2>Data Science Internship</h2>
+        <p>Issued by: Codecraft</p>
+        <span class="cert-date">2024</span>
+        <a href="assets/Ds Certificate.pdf" target="_blank" class="view-certificate">View</a>
+      </div>
+      <div class="certification-card reveal">
+        <h2>Web Development Internship</h2>
+        <p>Issued by: Hashind Robotics</p>
+        <span class="cert-date">Jul 2024 – Aug 2024</span>
+        <a href="assets/web dev.pdf" target="_blank" class="view-certificate">View</a>
+      </div>
     </div>
-</section>
-
-
-
-
-
+  </section>
 
   <section id="contact" class="contact">
-    <h1>Contact Me</h1>
-    <div class="contact-container">
-        <div class="contact-links">
-            <a href="https://github.com/Andruandru2" target="_blank" rel="noopener noreferrer">GitHub</a> |
-            <a href="https://www.linkedin.com/in/andrues-k-471635255/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </div>
-        <div class="contact-links">
-          <p><strong>Phone:</strong> <a href="tel:+918220965939">+91 8220965939</a></p>
-          <p><strong>Email:</strong> <a href="mailto:andruandru@gmail.com">andruandru3002@gmail.com</a></p>
-        </div>
-        
-        <div class="qr-code">
-          <img src="assets/email_qr.png" alt="Scan to Email Me">
-          <p class="qr-caption">Scan to mail me</p>
-        </div>
-        <p><strong>Location:</strong> <a>Bengaluru, Karnataka</a></p>
-        <p class="contact-message"><strong>Let's connect and collaborate!</strong></p>
-    </div>
-</section>
+    <h1>Contact <span>Me</span></h1>
+    <p class="contact-subtitle">Have an opportunity or want to collaborate? Let's talk.</p>
+    <div class="contact-cards">
 
+      <a href="https://github.com/Andruandru2" target="_blank" rel="noopener noreferrer" class="contact-card reveal">
+        <div class="contact-card-icon">GH</div>
+        <div class="contact-card-text">
+          <span class="contact-card-label">GitHub</span>
+          <span class="contact-card-value">Andruandru2</span>
+        </div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/andrues-k-471635255/" target="_blank" rel="noopener noreferrer" class="contact-card reveal">
+        <div class="contact-card-icon">in</div>
+        <div class="contact-card-text">
+          <span class="contact-card-label">LinkedIn</span>
+          <span class="contact-card-value">andrues-k</span>
+        </div>
+      </a>
+
+      <a href="mailto:andruandru3002@gmail.com" class="contact-card reveal">
+        <div class="contact-card-icon">✉</div>
+        <div class="contact-card-text">
+          <span class="contact-card-label">Email</span>
+          <span class="contact-card-value">andruandru3002@gmail.com</span>
+        </div>
+      </a>
+
+      <a href="tel:+918220965939" class="contact-card reveal">
+        <div class="contact-card-icon">📞</div>
+        <div class="contact-card-text">
+          <span class="contact-card-label">Phone</span>
+          <span class="contact-card-value">+91 8220965939</span>
+        </div>
+      </a>
+
+    </div>
+    <div class="contact-bottom">
+      <div class="qr-code">
+        <img src="assets/email_qr.png" alt="Scan to Email Me">
+        <p class="qr-caption">Scan to mail me</p>
+      </div>
+      <p class="contact-location">📍 Bengaluru, Karnataka</p>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 [ANDRUES K]. All rights reserved.</p>
+    <p>&copy; 2026 Andrues K. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
