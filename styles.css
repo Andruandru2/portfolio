@@ -1087,6 +1087,8 @@ footer {
 
 /* ── Responsive ── */
 @media (max-width: 768px) {
+
+  /* ── Nav ── */
   .menu-toggle { display: flex; }
   .nav-links {
     display: none;
@@ -1099,37 +1101,98 @@ footer {
     border-bottom: 1px solid var(--border);
     text-align: center;
     padding: 1rem 0;
+    z-index: 199;
   }
   .nav-links.active { display: flex; }
-  .nav-links li { margin: 0.8rem 0; }
+  .nav-links li { margin: 0.7rem 0; }
+  .nav-links a { font-size: 1.05rem; }
 
-  .home { padding: 1rem; }
+  /* ── Home ── */
+  .home { padding: 0 5%; }
   .home-content { flex-direction: column; align-items: center; padding-left: 0; }
   .vertical-line { display: none; }
   .details { margin-left: 0; text-align: center; }
-  .name { font-size: 2.4rem; }
-  .passion { font-size: 1.4rem; }
-  .description { font-size: 0.95rem; max-width: 100%; }
-  .buttons { flex-direction: column; align-items: center; }
-  .btn { width: 80%; text-align: center; }
+  .open-to-work { justify-content: center; }
+  .name { font-size: 2.4rem; letter-spacing: 1px; }
+  .passion { font-size: 1.3rem; }
+  .description { font-size: 0.92rem; max-width: 100%; }
+  .buttons { flex-direction: column; align-items: center; gap: 0.8rem; }
+  .btn { width: 75%; text-align: center; padding: 0.75rem 1rem; }
   .social-links { justify-content: center; }
 
-  .about-me { height: auto; min-height: 100vh; padding: 80px 5% 3rem; }
-  .about-details { flex-direction: column; align-items: center; }
+  /* ── About ── */
+  .about-me { height: auto; min-height: unset; padding: 80px 5% 3rem; }
+  .stats-row { gap: 1.2rem; flex-wrap: wrap; justify-content: center; }
+  .stat-number { font-size: 1.8rem; }
+  .about-details { flex-direction: column; align-items: center; gap: 1.5rem; }
   .about-line { display: none; }
   .about-image { padding-right: 0; }
-  .about-image img { width: 150px; height: 150px; }
-  .about-text { padding-left: 0; margin-top: 1rem; }
+  .about-image img { width: 140px; height: 140px; }
+  .about-text { padding-left: 0; text-align: left; }
   .skills { grid-template-columns: 1fr; }
 
+  /* ── Experience & Education ── */
   .experience { padding: 4rem 5% 3rem; }
-  .projects-container { grid-template-columns: 1fr 1fr; }
-  .contact-cards { grid-template-columns: 1fr 1fr; }
+  .education { padding: 4rem 5% 3rem; }
+  .exp-header { flex-direction: column; gap: 0.4rem; }
+  .edu-header { flex-direction: column; gap: 0.4rem; }
+  .exp-duration { align-self: flex-start; }
+  .edu-duration { align-self: flex-start; }
+  .experience-item { gap: 1rem; }
+  .education-item { gap: 1rem; }
+  .exp-card { padding: 0.9rem 1rem; }
+  .edu-card { padding: 0.9rem 1rem; }
+
+  /* ── Projects ── */
+  .projects-certifications { padding: 4rem 4% 3rem; }
+  .featured-grid { grid-template-columns: 1fr !important; }
+  .projects-container { grid-template-columns: 1fr; }
+  .show-more-btn { width: 100%; justify-content: center; }
+
+  /* ── Certifications ── */
+  .certifications-container { gap: 1rem; }
+  .certification-card { width: 100%; max-width: 340px; }
+
+  /* ── Contact ── */
+  .contact { padding: 4rem 5% 3rem; }
+  .contact-cards { grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+  .contact-card { padding: 1rem 0.8rem; }
+  .contact-card-value { font-size: 0.75rem; }
+
 }
 
 @media (max-width: 480px) {
-  .name { font-size: 2rem; }
-  .passion { font-size: 1.2rem; }
+
+  /* ── Home ── */
+  .name { font-size: 1.9rem; }
+  .passion { font-size: 1.15rem; }
+  .btn { width: 88%; }
+
+  /* ── About ── */
+  .stats-row { gap: 1rem; }
+  .stat-number { font-size: 1.6rem; }
+  .stat-label { font-size: 0.65rem; }
+
+  /* ── Section headings ── */
+  .about-content h2,
+  .experience h1,
+  .education h1,
+  .projects-certifications h1,
+  .contact h1 { font-size: 1.7rem; }
+
+  /* ── Projects ── */
   .projects-container { grid-template-columns: 1fr; }
+  .project-card { padding: 1rem; }
+  .tag { font-size: 0.65rem; }
+
+  /* ── Contact ── */
   .contact-cards { grid-template-columns: 1fr 1fr; }
+  .contact-card-icon { width: 36px; height: 36px; font-size: 1rem; }
+
+  /* ── Experience dots ── */
+  .experience-content::before,
+  .education-content::before { left: 4px; }
+  .exp-dot, .edu-dot { width: 12px; height: 12px; margin-top: 8px; }
+  .experience-item, .education-item { gap: 0.8rem; }
+
 }
